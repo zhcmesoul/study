@@ -1,0 +1,4 @@
+export JAVA_HOME=/opt/jdk1.8.0_131
+export JRE_HOME=/opt/jdk1.8.0_131/jre
+
+export MAVEN_HOME=/usr/local/maven3

@@ -1,0 +1,20 @@
+# 1) 根据具体的服务器IP地址设置192.168.7.114
+# 2) 根据具体的oracle_home路径设置: /opt/oracle/product/11.2.0/db_1
+
+LISTENER=(DESCRIPTION_LIST=(DESCRIPTION=  
+      (ADDRESS=(PROTOCOL=TCP)(HOST=192.168.7.114)(PORT=1521))    
+  )  
+)  
+
+SID_LIST_LISTENER=  
+  (SID_LIST=  
+      (SID_DESC=  
+         (GLOBAL_DBNAME=orcl)  
+         (SID_NAME=orcl11g)  
+         (ORACLE_HOME=/opt/oracle/product/11.2.0/db_1)  
+         (PRESPAWN_MAX=20)  
+         (PRESPAWN_LIST=  
+          (PRESPAWN_DESC=(PROTOCOL=tcp)(POOL_SIZE=2)(TIMEOUT=1))  
+         )  
+       )
+ ) 

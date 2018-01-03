@@ -1,0 +1,11 @@
+# 1) 根据实际环境设置监听服务名称:z2_oracle
+# 2) 根据具体的服务器IP地址设置192.168.7.114
+z2_oracle =  
+  (DESCRIPTION =  
+    (ADDRESS_LIST =  
+      (ADDRESS=(PROTOCOL=TCP)(HOST=192.168.7.114)(PORT=1521))  
+    )  
+    (CONNECT_DATA =  
+      (SID = orcl11g)  
+    )  
+  )
