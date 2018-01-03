@@ -1,0 +1,24 @@
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+export NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+export LANG=zh_CN.UTF-8
+
+PATH=$PATH:$HOME/bin:/opt/jdk1.8.0_131/bin:/opt/jdk1.8.0_131/jre/bin:/usr/local/maven3/bin
+export PATH
+
+export ORACLE_BASE=/opt/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/db_1
+export PATH=$PATH:$ORACLE_HOME/bin
+export ORACLE_SID=orcl11g
+export TNS_ADMIN=$ORACLE_HOME/network/admin
